@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Search, ShoppingCart} from "lucide-react";
+import { Search, ShoppingCart, Menu} from "lucide-react";
 import {
   Avatar,
   AvatarBadge,
@@ -31,7 +31,7 @@ export function Header() {
                 </div>
             </div>
 
-            <div id="right-side" className="flex text-[#F5F5F5] text-lg gap-5 items-center">
+            <div id="right-side" className="hidden md:flex text-[#F5F5F5] text-lg gap-5 items-center">
                 <div className="flex gap-3 items-center">
                     <Search className="opacity-50 hover:opacity-100 transition-opacity" />
 
@@ -41,10 +41,14 @@ export function Header() {
                 </div>
 
                 <Avatar>
-                    <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+                    <AvatarImage src="/icon.jpeg" alt="@shadcn" />
                     <AvatarFallback>CN</AvatarFallback>
-                    <AvatarBadge className="bg-green-600 dark:bg-green-800" />
+                    <AvatarBadge className="ring-0 bg-green-600 dark:bg-green-800" />
                 </Avatar>
+            </div>
+            
+            <div id="mobile" className="flex md:hidden">
+                    <Menu className="text-[#F5F5F5] opacity-50 hover:opacity-100 transition-opacity"/>
             </div>
         </header>
     );

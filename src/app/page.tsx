@@ -1,11 +1,11 @@
 import Link from "next/link";
-import { ArrowRight} from "lucide-react";
+import { ArrowRight, RocketIcon, ShieldCheck, Zap } from "lucide-react";
 import { HeroSectionBackground } from "./components/HeroSectionBackground";
 
 export default function Home() {
   return (
     <main>
-      <section id="hero-section" className="relative h-235 overflow-hidden">
+      <section id="hero-section" className="relative h-235 overflow-hidden border-b border-[#262E3D]">
 
       <HeroSectionBackground />
 
@@ -29,6 +29,41 @@ export default function Home() {
         </div>
 
       </div>
+      </section>
+
+      <section id="about" className="m-15 flex items-center justify-center gap-10">
+        <div className="flex gap-4 bg-[#0C101B] border border-[#262E3D] w-100 p-4 rounded-sm">
+          <div className="flex items-center justify-center rounded-sm w-15 h-12 bg-[#5400AE]/30 p-2">
+              <RocketIcon className="text-[#5400AE]"/>
+          </div>
+
+          <div>
+             <h3 className="font-space-grotesk text-[#F5F5F5] text-lg font-bold">Download instantâneo</h3>
+             <p className="font-poppins opacity-50 text-[#F5F5F5]">Chaves entregues em segundos após o pagamento.</p>
+          </div>
+        </div>
+
+        <div className="flex gap-4 bg-[#0C101B] border border-[#262E3D] w-100 p-4 rounded-sm">
+          <div className="flex items-center justify-center rounded-sm w-15 h-12 bg-[#5400AE]/30 p-2">
+              <ShieldCheck className="text-[#5400AE]"/>
+          </div>
+
+          <div>
+             <h3 className="font-space-grotesk text-[#F5F5F5] text-lg font-bold">Compra segura</h3>
+             <p className="font-poppins opacity-50 text-[#F5F5F5]">Pagamento criptografado e garantia de reembolso.</p>
+          </div>
+        </div>
+
+        <div className="flex gap-4 bg-[#0C101B] border border-[#262E3D] w-100 p-4 rounded-sm">
+          <div className="flex items-center justify-center rounded-sm w-15 h-12 bg-[#5400AE]/30 p-2">
+              <Zap className="text-[#5400AE]"/>
+          </div>
+
+          <div>
+             <h3 className="font-space-grotesk text-[#F5F5F5] text-lg font-bold">Ofertas diárias</h3>
+             <p className="font-poppins opacity-50 text-[#F5F5F5]">Descontos rotativos em títulos AAA e indies.</p>
+          </div>
+        </div>
       </section>
     </main>
   );

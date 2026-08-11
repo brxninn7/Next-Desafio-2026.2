@@ -34,6 +34,14 @@ export function HeroSectionBackground() {
                         className="h-full w-full object-cover"
                     />
                 </SwiperSlide>
+
+                <SwiperSlide>
+                    <img
+                        src="/eldenringimage.jpg"
+                        alt=""
+                        className="h-full w-full object-cover"
+                    />
+                </SwiperSlide>
             </Swiper>
         </div>
     );

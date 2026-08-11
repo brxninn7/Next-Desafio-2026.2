@@ -5,9 +5,9 @@ import { MailIcon } from "lucide-react"
 
 export function Footer(){
     return(
-        <footer className="hidden md:flex text-[#F5F5F5] bg-[#0A0F18] border-t-1 border-[#262E3D] p-14 justify-between">
+        <footer className="flex text-[#F5F5F5] bg-[#0A0F18] border-t border-[#262E3D] p-14 justify-between font-poppins">
                 <div id="explorar-section" className="flex flex-col">
-                    <h3 className="opacity-50 pb-3">
+                    <h3 className="opacity-50 pb-3 font-space-grotesk">
                         EXPLORAR
                     </h3>
 
@@ -41,7 +41,7 @@ export function Footer(){
                 </div>
 
                 <div id="midias-section" className="flex flex-col items-center justify-start">
-                    <h3 className="opacity-50 pb-3">REDES SOCIAIS</h3>
+                    <h3 className="opacity-50 pb-3 font-space-grotesk">REDES SOCIAIS</h3>
 
                     <div className="flex gap-3 items-center justify-center">
                         <Link href="https://www.instagram.com/brxninn/" target="_blank" className="bg-[#0E141F] p-2 border-2 border-[#262E3D] hover:bg-[#131b29] transition-colors rounded-lg">

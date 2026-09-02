@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowRight, RocketIcon, ShieldCheck, Zap } from "lucide-react";
 import { HeroSectionBackground } from "./components/HeroSectionBackground";
+import { CardItem } from "./components/CardItem"
 
 export default function Home() {
   return (
@@ -64,6 +65,83 @@ export default function Home() {
              <p className="font-poppins opacity-50 text-[#F5F5F5]">Descontos rotativos em títulos AAA e indies.</p>
           </div>
         </div>
+      </section>
+
+      <section id="lancamentos-section" className="text-[#F5F5F5] m-10 mt-40 mb-40">
+        <div>
+          <h3 className="font-space-grotesk text-[#5400AE] font-bold">EM DESTAQUE</h3>
+        </div>
+
+        <div className="font-poppins flex justify-between mb-5">
+          <h1 className="text-3xl font-bold">Lançamentos da semana</h1>
+
+          <Link href="/jogos" className="flex opacity-50 items-end hover:opacity-100 transition-opacity">
+            Ver mais <ArrowRight />
+          </Link>
+
+        </div>
+
+        <div id="lancamentos-items" className="flex justify-between pl-25 pr-25">
+          <CardItem />
+          <CardItem />
+          <CardItem />
+          <CardItem />
+        </div>
+      </section>
+
+      <section id="mais-comprados-section" className="text-[#F5F5F5] m-10 mt-40 mb-40">
+        <div>
+          <h3 className="font-space-grotesk text-[#5400AE] font-bold">EM DESTAQUE</h3>
+        </div>
+
+        <div className="font-poppins flex justify-between mb-5">
+          <h1 className="text-3xl font-bold">Mais comprados</h1>
+
+          <Link href="/jogos" className="flex opacity-50 items-end hover:opacity-100 transition-opacity">
+            Ver mais <ArrowRight />
+          </Link>
+
+        </div>
+
+        <div id="mais-comprados-items" className="flex justify-between pl-25 pr-25">
+          <CardItem />
+          <CardItem />
+          <CardItem />
+          <CardItem />
+        </div>
+    
+      </section>
+
+      <section id="valores-section" className="text-[#F5F5F5] p-10 mb-30 flex justify-between items-center ml-65 mr-65">
+          <div className="flex flex-col gap-2 w-96 justify-center bg-[#0E141F] border border-[#262E3D] p-4 rounded-sm h-37.5">
+              <div className="font-space-grotesk text-[#5400AE] font-bold text-3xl">
+                  <h1>Missão</h1>
+              </div>
+
+              <div className="font-poppins opacity-50 text-justify">
+                  <p>Levar os melhores jogos do mundo para as mãos de todo tipo de jogador, com preço justo e experiência instantânea.</p>
+              </div>
+          </div>
+
+          <div className="flex flex-col gap-2 w-96 justify-center bg-[#0E141F] border border-[#262E3D] p-4 rounded-sm h-37.5">
+              <div className="font-space-grotesk text-[#5400AE] font-bold text-3xl">
+                  <h1>Visão</h1>
+              </div>
+
+              <div className="font-poppins opacity-50 text-justify">
+                  <p>Ser a loja de jogos digital mais amada da América Latina até 2030.</p>
+              </div>
+          </div>
+
+          <div className="flex flex-col gap-2 w-96 justify-center bg-[#0E141F] border border-[#262E3D] p-4 rounded-sm h-37.5">
+              <div className="font-space-grotesk text-[#5400AE] font-bold text-3xl">
+                  <h1>Valores</h1>
+              </div>
+
+              <div className="font-poppins opacity-50 text-justify">
+                  <p>Comunidade, transparência, curadoria e paixão por videogames em cada pixel.</p>
+              </div>
+          </div>
       </section>
     </main>
   );

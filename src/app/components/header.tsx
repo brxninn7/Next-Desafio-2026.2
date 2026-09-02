@@ -10,7 +10,7 @@ import {
 
 export function Header() {
     return (
-        <header className="flex justify-between items-center p-6 pl-10 pr-10 font-poppins z-3 absolute w-full">
+        <header className="flex justify-between items-center p-6 pl-10 pr-10 font-poppins z-50 absolute w-full top-0">
             <div id="left-side" className="flex gap-5">
 
                 <Link href="/">

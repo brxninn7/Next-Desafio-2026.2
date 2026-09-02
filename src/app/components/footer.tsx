@@ -6,7 +6,7 @@ import { MailIcon } from "lucide-react"
 export function Footer(){
     return(
         <footer className="flex text-[#F5F5F5] bg-[#0A0F18] border-t border-[#262E3D] p-14 justify-between font-poppins">
-                <div id="explorar-section" className="flex flex-col">
+                <div id="explorar-section" className="flex flex-col w-59">
                     <h3 className="opacity-50 pb-3 font-space-grotesk">
                         EXPLORAR
                     </h3>

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowRight, RocketIcon, ShieldCheck, Zap } from "lucide-react";
-import { HeroSectionBackground } from "./components/HeroSectionBackground";
-import { CardItem } from "./components/CardItem";
+import { HeroSectionBackground } from "../components/HeroSectionBackground";
+import { CardItem } from "../components/CardItem";
 
 export default function Home() {
   return (
